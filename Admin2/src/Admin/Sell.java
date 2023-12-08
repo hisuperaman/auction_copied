@@ -49,7 +49,7 @@ public class Sell extends JPanel{
 		setBounds(309,180,980,564);
 		
 		jfile=new JFileChooser();
-		jfile.setCurrentDirectory(new java.io.File("/home/ashish/Downloads"));
+		jfile.setCurrentDirectory(new java.io.File(System.getProperty("user.dir")));
 		jfile.setDialogTitle("Select Image");
 		jfile.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		jfile.setAcceptAllFileFilterUsed(false);
@@ -79,7 +79,7 @@ public class Sell extends JPanel{
 		
 		lblSelected = new JLabel("Selected");
 		lblSelected.setForeground(new Color(0, 128, 0));
-		lblSelected.setIcon(new ImageIcon("/home/ashish/Downloads/mark.png"));
+		lblSelected.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/mark.png"));
 		lblSelected.setBounds(534, 381, 121, 43);
 		lblSelected.setVisible(false);
 		add(lblSelected);
@@ -195,7 +195,7 @@ public class Sell extends JPanel{
 				}
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon("/home/ashish/Downloads/upload.png"));
+		btnNewButton.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/upload.png"));
 		btnNewButton.setBounds(395, 384, 135, 36);
 		btnNewButton.setFont(new Font("Arial",Font.PLAIN,20));
 		btnNewButton.setFocusable(false);

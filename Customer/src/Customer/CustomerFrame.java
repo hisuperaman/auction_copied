@@ -61,7 +61,7 @@ public class CustomerFrame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		setBounds(0, 0, screenSize.width, screenSize.height);
-		icon=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/index.png");
+		icon=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/index.png");
 		setIconImage(icon.getImage());
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -81,7 +81,7 @@ public class CustomerFrame extends JFrame {
 			}
 		}
 		
-		icon2=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/Frame2.jpg");
+		icon2=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/Frame2.jpg");
 		
 		lblCustomer = new JLabel("Customer Portal");
 		lblCustomer.setForeground(new Color(224, 255, 255));
@@ -131,7 +131,7 @@ public class CustomerFrame extends JFrame {
 		contentPane.add(result);
 		result.setVisible(false);
 		
-		icon4=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/a1.jpg");
+		icon4=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/a1.jpg");
 		panel_2.setLayout(null);
 		label_1 = new JLabel(icon4);
 		label_1.setBounds(70, 23, 843, 517);
@@ -149,7 +149,7 @@ public class CustomerFrame extends JFrame {
 		label_2.setBounds(40, 75, 400, 25);
 		label_1.add(label_2);
 		
-		icon3=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/logo.png");
+		icon3=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/logo.png");
 		label=new JLabel(icon3);
 		label.setBounds(85, 3, 140, 100);
 		contentPane.setLayout(null);

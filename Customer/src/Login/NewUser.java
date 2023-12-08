@@ -350,7 +350,7 @@ public class NewUser extends JPanel {
 		});
 		button.setBackground(new Color(0, 128, 0));
 		button.setFocusable(false);
-		button.setIcon(new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/back5.png"));
+		button.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/back5.png"));
 		button.setBounds(13, 16, 50, 37);
 		add(button);
 		

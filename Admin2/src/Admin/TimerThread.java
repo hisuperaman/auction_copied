@@ -70,10 +70,10 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 			{
 				item=i.next();
 				Barray=item.b;
-				File file=new File("/home/ashish/eclipse-workspace/Admin2/AdminImages/"+String.valueOf(item.ID)+".txt");
+				File file=new File(System.getProperty("user.dir")+"/AdminImages/"+String.valueOf(item.ID)+".txt");
 				fos=new FileOutputStream(file);
 				fos.write(Barray);
-				image=new ImageIcon("/home/ashish/eclipse-workspace/Admin2/AdminImages/"+String.valueOf(item.ID)+".txt");
+				image=new ImageIcon(System.getProperty("user.dir")+"/AdminImages/"+String.valueOf(item.ID)+".txt");
 				ServerCollection.items.put(item.ID,item);
 				ServerCollection.Images.put(item.ID,image);
 			}
@@ -128,10 +128,10 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 						{
 							item=it.next();
 							Barray=item.b;
-							File file=new File("/home/ashish/eclipse-workspace/Admin2/AdminImages/"+String.valueOf(item.ID)+".txt");
+							File file=new File(System.getProperty("user.dir")+"/AdminImages/"+String.valueOf(item.ID)+".txt");
 							fos=new FileOutputStream(file);
 							fos.write(Barray);
-							image=new ImageIcon("/home/ashish/eclipse-workspace/Admin2/AdminImages/"+String.valueOf(item.ID)+".txt");
+							image=new ImageIcon(System.getProperty("user.dir")+"/AdminImages/"+String.valueOf(item.ID)+".txt");
 							ServerCollection.items.put(item.ID,item);
 							ServerCollection.Images.put(item.ID,image);
 						}

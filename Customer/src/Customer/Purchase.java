@@ -282,10 +282,10 @@ public class Purchase extends JPanel{
 			{
 				sentitem=it.next();
 				Barray=sentitem.b;
-				File file=new File("/home/ashish/eclipse-workspace/Customer/CustomerImages/"+String.valueOf(sentitem.ID)+".txt");
+				File file=new File(System.getProperty("user.dir")+"/CustomerImages/"+String.valueOf(sentitem.ID)+".txt");
 				fos=new FileOutputStream(file);
 				fos.write(Barray);
-				image=new ImageIcon("/home/ashish/eclipse-workspace/Customer/CustomerImages/"+String.valueOf(sentitem.ID)+".txt");
+				image=new ImageIcon(System.getProperty("user.dir")+"/CustomerImages/"+String.valueOf(sentitem.ID)+".txt");
 				CustomerCollection.items.put(sentitem.ID,sentitem);
 				CustomerCollection.Images.put(sentitem.ID,image);
 			}

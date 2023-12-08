@@ -101,7 +101,7 @@ public class AdminLogin extends JFrame{
 		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		setBounds(0, 0, screenSize.width, screenSize.height);
 		setTitle("Login Portal");
-		icon=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/index.png");
+		icon=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/index.png");
 		setIconImage(icon.getImage());
 		
 		contentPane = new JPanel();
@@ -115,7 +115,7 @@ public class AdminLogin extends JFrame{
 		contentPane.add(lblAdminPortal);
 		lblAdminPortal.setForeground(Color.WHITE);
 		
-		icon2=new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/login.jpg");
+		icon2=new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/login.jpg");
 		
 		panel = new JPanel();
 		panel.setForeground(new Color(154, 205, 50));
@@ -135,7 +135,7 @@ public class AdminLogin extends JFrame{
 		forgotpass.setVisible(false);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/Login2.png"));
+		lblNewLabel.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/Login2.png"));
 		lblNewLabel.setBounds(250, 12, 100, 100);
 		panel.add(lblNewLabel);
 		
@@ -145,7 +145,7 @@ public class AdminLogin extends JFrame{
 		panel.add(textPane);
 		
 		lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/User5.png"));
+		lblNewLabel_1.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/User5.png"));
 		lblNewLabel_1.setBounds(49, 124, 37, 37);
 		panel.add(lblNewLabel_1);
 		
@@ -155,7 +155,7 @@ public class AdminLogin extends JFrame{
 		panel.add(password);
 		
 		label = new JLabel("");
-		label.setIcon(new ImageIcon("/home/ashish/eclipse-workspace/ProjectImages2/pwd3.png"));
+		label.setIcon(new ImageIcon(System.getProperty("user.dir")+"/ProjectImages2/pwd3.png"));
 		label.setBounds(49, 173, 37, 37);
 		panel.add(label);
 		

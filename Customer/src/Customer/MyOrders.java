@@ -80,10 +80,10 @@ public class MyOrders extends JPanel {
 		{
 			item=i.next();
 			Barray=item.b;
-			File file=new File("/home/ashish/eclipse-workspace/Customer/CustomerImages/"+String.valueOf(item.ID)+".txt");
+			File file=new File(System.getProperty("user.dir")+"/CustomerImages/"+String.valueOf(item.ID)+".txt");
 			fos=new FileOutputStream(file);
 			fos.write(Barray);
-			image=new ImageIcon("/home/ashish/eclipse-workspace/Customer/CustomerImages/"+String.valueOf(item.ID)+".txt");
+			image=new ImageIcon(System.getProperty("user.dir")+"/CustomerImages/"+String.valueOf(item.ID)+".txt");
 			label2=new JLabel(image);
 			model.addRow(new Object[]{item.ID,item.name,label2,item.Owner_name,item.Reserve_Price,item.Hammer_Price});
 		}
