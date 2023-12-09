@@ -124,12 +124,14 @@ public class Start extends JPanel{
 	}
 	public void StartTheAuction(Sell sell,AuctionRunning parent,StartAuction startAuction) throws Exception
 	{
+		
 		output.writeObject("AuctionStarted");
 		output.reset();
 		
 		TimerThread t=new TimerThread(input,output,this,sell,parent,startAuction);
 		Thread t2=new Thread(t);
 		t2.start();
+		
 	}
 	public void ShowTheAuction(Sell sell,AuctionRunning parent,StartAuction startAuction) throws Exception
 	{

@@ -16,29 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `item`
+-- Table structure for table `bid`
 --
 
-DROP TABLE IF EXISTS `item`;
+DROP TABLE IF EXISTS `bid`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `item` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `Name` varchar(30) DEFAULT NULL,
-  `Owner_Name` varchar(30) DEFAULT NULL,
-  `Reserve_Price` int DEFAULT NULL,
-  `Image` blob,
-  PRIMARY KEY (`ID`)
+CREATE TABLE `bid` (
+  `ID` int DEFAULT NULL,
+  `Consumer_Name` varchar(30) DEFAULT NULL,
+  `Bid_Price` int DEFAULT NULL,
+  `Constomer_ID` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `item`
+-- Dumping data for table `bid`
 --
 
-LOCK TABLES `item` WRITE;
-/*!40000 ALTER TABLE `item` DISABLE KEYS */;
-/*!40000 ALTER TABLE `item` ENABLE KEYS */;
+LOCK TABLES `bid` WRITE;
+/*!40000 ALTER TABLE `bid` DISABLE KEYS */;
+INSERT INTO `bid` VALUES (1,'wayne',50,1);
+/*!40000 ALTER TABLE `bid` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-08 17:51:00
+-- Dump completed on 2023-12-09 21:31:49

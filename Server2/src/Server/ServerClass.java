@@ -44,6 +44,7 @@ public class ServerClass extends JFrame{
 			CheckThread checkthread=new CheckThread(s2);
 			Thread t=new Thread(checkthread);
 			t.start();
+			
 	    }
 	}
 	public static void main(String[] args) throws Exception

@@ -16,31 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `customer`
+-- Table structure for table `status`
 --
 
-DROP TABLE IF EXISTS `customer`;
+DROP TABLE IF EXISTS `status`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `customer` (
-  `Id` int NOT NULL AUTO_INCREMENT,
-  `Name` varchar(30) DEFAULT NULL,
-  `Nickname` varchar(20) DEFAULT NULL,
-  `Address` varchar(20) DEFAULT NULL,
-  `DOB` date DEFAULT NULL,
-  `Mob` bigint DEFAULT NULL,
-  `Password` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+CREATE TABLE `status` (
+  `Auction` varchar(20) DEFAULT NULL,
+  `ID` int DEFAULT NULL,
+  `Time` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `customer`
+-- Dumping data for table `status`
 --
 
-LOCK TABLES `customer` WRITE;
-/*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-/*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+LOCK TABLES `status` WRITE;
+/*!40000 ALTER TABLE `status` DISABLE KEYS */;
+INSERT INTO `status` VALUES ('Started',1,'00 : 07');
+/*!40000 ALTER TABLE `status` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-08 17:51:00
+-- Dump completed on 2023-12-09 21:31:49

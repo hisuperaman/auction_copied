@@ -47,13 +47,13 @@ public class StartAuction extends JPanel {
 		btnStartAuction = new JButton("Start Auction");
 		btnStartAuction.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				if(!ServerCollection.ItemList.isEmpty())
 				{
 					btnStartAuction.setVisible(false);
 					start.setVisible(true);
 					try 
 					{
+						
 						start.StartTheAuction(sell,auctionrunning,thisframe);
 						auctionrunning.setVisible(true);
 						sell.lblcost.setVisible(false);
@@ -67,6 +67,7 @@ public class StartAuction extends JPanel {
 						sell.textPane.setVisible(false);
 						sell.textPane2.setVisible(false);
 						sell.textPane_1.setVisible(false);
+						
 					} catch (Exception e1) 
 					{
 						e1.printStackTrace();

@@ -79,6 +79,7 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 			}
 			timer.schedule(new GetStatus(), 0, 1000);
 			}
+			
 		} catch (Exception e) 
 		{
 			e.printStackTrace();
@@ -101,6 +102,7 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 					if(current.ID==0)
 					{
 						flag=true;
+						
 						parent.setVisible(false);
 						parent2.setVisible(false);
 						sell.lblcost.setVisible(true);
@@ -115,6 +117,7 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 						sell.textPane2.setVisible(true);
 						sell.textPane_1.setVisible(true);
 						startAuction.btnStartAuction.setVisible(true);
+						
 						output.writeObject("ItemList");
 						output.reset();
 						ItemList=(Vector<Item>)input.readObject();
@@ -171,7 +174,7 @@ public class TimerThread implements Runnable,Comparator<PriorityBid>{
 				{
 			    	pb=pq.poll();
 					parent.model.addRow(new Object[]{pb.bid.Customer_Name,pb.bid.Bid_Price});
-				}	
+				}
 			} catch (Exception e1) 
 	    	{
 				e1.printStackTrace();
